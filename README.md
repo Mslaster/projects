@@ -6,5 +6,5 @@ ___
 2. Project Luther - Movies
 3. Project McNulty - MLB HOF
 4. Project Fletcher - Poe
-5. Project Kojak - Manager's Challenge
+5. [Project Kojak - Manager's Challenge](Kojak)
 
