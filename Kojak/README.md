@@ -25,4 +25,5 @@ So, I tried a third approach. I simply did the same as the second except limited
 
 Either way you slice it, there were a lot of different shifts in how a lost challenge affected the chances of winning from inning to inning, which I do not have an intuitive explanation for other than attribute it to small sample sizes. But, either way, I think it's safe to assume that the "cost" is very low. In fact, I managed to get this quote directly from Tom Tango himself via direct email, "There's not much cost to consider."
 
-##3. Probability of Call Being Overturned
+##3. Probability of Call Being Overturned    
+(http://www.hardballtimes.com/when-should-managers-challenge/)
