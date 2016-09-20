@@ -2,7 +2,7 @@
 
 For my capstone project I decided to tackle the issue of when to optimally use a manager's challenge in baseball.
 Starting in 2014, Major League Baseball instituted a new rule where a manager had the right to "challenge" a call by an umpire (for certain types of calls). 
-The call is then reviewed by a crew of umpires in New York City through multiple camera angles. If the manager is correct, the call is overturned. If the umpire is correct or the video is inconclusive, then the manager loses the ability to challenge for the remainder of the game. So, my goal was to model when a manager should optimally attempt to challenge a possible mistaken call. Much of the structure of my project is inspired by this article, (http://www.hardballtimes.com/when-should-managers-challenge/) but I did approach many parts differently.    
+The call is then reviewed by a crew of umpires in New York City through multiple camera angles. If the manager is correct, the call is overturned. If the umpire is correct or the video is inconclusive, then the manager loses the ability to challenge for the remainder of the game. So, my goal was to model when a manager should optimally attempt to challenge a possible mistaken call. Much of the structure of my project is inspired by this article, (http://www.hardballtimes.com/when-should-managers-challenge/) but I did approach many parts differently. The notebook containing the code is [here](MLB Challengessept8.ipynb). Additionally, linked over [here](MLBReplay913).    
 
 ##Data Sources
 I scraped replay data from MLB's [Baseball Savant website] (https://baseballsavant.mlb.com/replay) and combined it with the files available available on [Retrosheet](http://retrosheet.org/Replay.htm). With the exception of about 50 out of 3000 replays, the data was pretty consistent. 
@@ -34,8 +34,13 @@ The most basic way I chose to address this is by assuming that set "B" will appr
 
 Additionally, I started a second approach to come up with a better approximation of "O" and "B", but have not yet implemented it. I observed that, predictably, the more frequently a team challenged, the more frequently they successfully overturned calls:     
 ![](spgcpg.png)     
-However, from basic data visualization, this seemed to occur at a diminishing rate as seen by its effect on overally accuracy:     
+However, from basic data visualization, this seemed to occur at a diminishing rate as seen by its effect on overall accuracy:     
 ![](acccpg.png)     
 So, presumably, if one were to fit a curve to the points, there would be some sort of horizontal maximum that it would approach. One can take the value of that maximum together with the approximate number of challenges per game to come close to achieving it, one can get a good approximation of sets "O" and "B." However, I still need further work to refine the implementation.  
 
-Either way, I felt that removing the team challenging as a factor would fail to leverage the good judgment of teams that generally have been better at overturning calls. So, I decided that it would make most sense to allow a mix of two models. The first one being the initial unadjusted one taking into account the team challenging and the second being the one with the adjustment for set "B," which eliminates team. A team can choose to weight it based on how "similar" a close call might be to their own set "C."
+Either way, I felt that removing the team challenging as a factor would fail to leverage the good judgment of teams that generally have been better at overturning calls. So, I decided that it would make most sense to allow a mix of two models. The first one being the initial unadjusted one taking into account the team challenging and the second being the one with the adjustment for set "B," which eliminates team. A team can choose to weight it based on how "similar" a close call might be to their own set "C."    
+
+##Conclusions and Future Considerations    
+When trying different combinations of scenarios, this model seems to encourage the manager to be very aggressive in challenging close calls. However, much of this depends on the assumption that the "opportunity cost" for a lost challenge is very low. Ideally, to get a better measure of opportunity cost, one can simply retrace Tom Tango's steps in constructing Win Expectancy tables, but incorporating the opportunity to challenge in the game state.    
+
+Additionally, to better leverage the judgment of a team's replay official in the algorithm, a team can implement a system where after a call is challenge, the replay official rates how "confident" he is on a scale. Later on, that scale can be used to retrain a new model taking into account the confidence level of the replay official.
