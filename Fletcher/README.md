@@ -6,7 +6,7 @@ Initially, I sought to do a much more comprehensive project exploring the condit
 The disorder is characterized by an obsessive urge to write. I wanted to compare the writing styles of alleged hypergraphic authors to those contemporaries of the same genre.
 However, I realized that far more clinical knowledge would have been necessary to understand in which direction to go.
 So, instead, I decided to investigate the works of one particular writer rumored to be afflicted with hypergraphia, Edgar Allen Poe.
-Since Poe is known to have widely variable [themes] (https://en.wikipedia.org/wiki/Edgar_Allan_Poe#Literary_style_and_themes) in his writings, I wanted to see if there was some way to capture them. The notebook containing my coed is over [here](Poe Edited.ipynb).   
+Since Poe is known to have widely variable [themes] (https://en.wikipedia.org/wiki/Edgar_Allan_Poe#Literary_style_and_themes) in his writings, I wanted to see if there was some way to capture them. The notebook containing my code is over [here](Poe Edited.ipynb).   
 
 ##Process    
 I culled 66 short stories written by Poe, which is available at Project Gutenberg. I chose to limit it to short stories for consistency in the type of documents modeled on.
