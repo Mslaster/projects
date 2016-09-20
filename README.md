@@ -2,7 +2,7 @@
 ___
 ## Metis 
 
-* [Project Kojak - Manager's Challenge](Kojak)
+* [Project Kojak:](Kojak)  When should an MLB manager challenge? A strategic probabilistic approach
 * Project Fletcher - Poe
 * Project McNulty - MLB HOF
 * Project Luther - Movies
