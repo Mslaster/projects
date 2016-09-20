@@ -17,4 +17,5 @@ I wanted to try to find some method to try to "capture" the right number more ob
 So, I had the following intuition: I'd assume that an individual topic will contain a generally consistent emotive tone, calculated by TextBlob's sentiment analysis.
 However, different topics will generally differ from one another in emotive tone. If I were to assume too few topics, when weighing the polarity of the most common words per topic, they would not vary too much since each topic would contain so many varied words. 
 On the other hand, if I chose too many topics, each one would be cut down to too few words to capture any significant emotive tone. So, there must be some "middle ground" where there are enough topics to capture varied sentiments yet not too many to "water down" each one.
-Optimizing for standard deviation, I found this to indeed be true ![](poelaritystd.png)
+Optimizing for standard deviation, I found this to indeed be true:     
+![](poelaritystd.png)
