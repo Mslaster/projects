@@ -9,6 +9,7 @@ Additionally, I created an function that returns a heat map that would show a so
 2) A range from 0-100% of how “similar” a challenge is to past attempted challenges for a team.
 
 Below is an example of a possible heat map:
+
 ![](challengeheatmap.png)
 
 Since almost the whole region is closer to red than blue, that means that the manager should challenge under the entire range of model assumptions.
