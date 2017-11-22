@@ -7,3 +7,8 @@ The first change I made was the classification model I decided to use. Initially
 Additionally, I created an function that returns a heat map that would show a sort of confidence interval as to the overall gain from challenging a call. I did this across two inputs: 
 1) the “opportunity cost” of a lost challenge ranging from the most cautious estimate (purely based on points below .500 for a resulting lost challenge per out remaining) to my regular estimate, which I had initially used (though still very low) and 
 2) A range from 0-100% of how “similar” a challenge is to past attempted challenges for a team.
+
+Below is an example of a possible heat map:
+![](challengeheatmap.png)
+
+Since almost the whole region is closer to red than blue, that means that the manager should challenge under the entire range of model assumptions.
