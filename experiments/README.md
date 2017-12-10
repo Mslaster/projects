@@ -1,1 +1,1 @@
-* [Simulating Dreidel Games](Dreidel_Simulation.ipynb) - What the expected distribution of outcomes playing Dreidel?
+* [Simulating Dreidel Games](Dreidel_Simulation.ipynb) - What's the distribution of outcomes playing Dreidel?
