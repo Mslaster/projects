@@ -10,3 +10,4 @@ ___
 ## Assorted Projects
 
 * [Experiments-](experiments) A collection of "experiments" I ran. They are generally not complete thoughts, but simply open-ended attempts to satisfy my curiosity
+* [DataCamp-](datacamp) Projects that I completed from the [DataCamp Projects section](https://www.datacamp.com/projects) 
